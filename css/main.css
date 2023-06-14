@@ -246,6 +246,44 @@ button {
   line-height: 1.9rem;
 }
 
+.rooms__cards {
+  margin-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+.rooms__cards .card__img {
+  margin-bottom: 3.2rem;
+}
+.rooms__cards .card__img img {
+  width: 100%;
+}
+.rooms__cards .card__info h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+}
+.rooms__cards .card__info p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  color: #848fac;
+  margin: 2.4rem 0 3.2rem 0;
+}
+.rooms__cards .card__info__link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.3rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+}
+.rooms__cards .card__info__link a {
+  color: #192252;
+}
+
 .contact {
   padding: 8rem 0;
   display: flex;
@@ -437,4 +475,68 @@ button {
   width: 1.2rem;
   height: 1.2rem;
   background-color: #ff620a;
+}
+
+footer {
+  background-color: #0b265a;
+  padding: 8rem 0;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer__left {
+  width: 30%;
+}
+.footer__left h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 3.9rem;
+  font-family: montserrat;
+  color: #fff;
+}
+.footer__left p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  line-height: 2.8rem;
+  margin: 2.4rem 0 3.2rem 0;
+  color: #848fac;
+}
+.footer__left .social__network {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.4rem;
+}
+.footer__right {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: start;
+  gap: 11.3rem;
+}
+.footer__right a {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  opacity: 0.7;
+}
+.footer__right ul {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 2.4rem;
+}
+.footer__right ul li:first-child a {
+  opacity: 1;
+  font-weight: 600;
 }
