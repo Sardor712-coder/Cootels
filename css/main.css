@@ -216,6 +216,36 @@ button {
   width-width: 100%;
 }
 
+.rooms_info {
+  padding: 8rem 0;
+  text-align: center;
+}
+.rooms_info h2 {
+  font-family: montserrat;
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 5.4rem;
+  margin-bottom: 2.4rem;
+  color: #192252;
+}
+.rooms_info p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  color: #848fac;
+  margin-bottom: 1.6rem;
+}
+.rooms_info button {
+  margin-top: 3.2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  background-color: #0e1734;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+}
+
 .contact {
   padding: 8rem 0;
   display: flex;

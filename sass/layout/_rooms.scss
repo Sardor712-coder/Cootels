@@ -1,0 +1,20 @@
+.rooms_info {
+     @include padding;
+     text-align: center;
+     h2 {
+          font-family: montserrat;
+          @include font_2(3.6rem, 600, 5.4rem);
+          margin-bottom: 2.4rem;
+          color: $primary_color;
+     }
+     p {
+          @include font_1;
+          color: $secondary;
+          margin-bottom: 1.6rem;
+     }
+     button {
+          margin-top: 3.2rem;
+          @include btn;
+          @include font_2;
+     }
+}
