@@ -1,0 +1,139 @@
+.contact {
+     @include padding;
+     @include flex;
+     overflow: hidden;
+     &__left {
+          width: 50%;
+
+          span {
+               @include font_2;
+               line-height: 2.4rem;
+               margin-bottom: 1.2rem;
+          }
+
+          h2 {
+               font-family: montserrat;
+               @include font_2(3.6rem, 600, 5.4rem);
+               margin-bottom: 2.4rem;
+               color: $primary_color;
+          }
+
+          p {
+               @include font_1;
+               color: $secondary;
+               margin-bottom: 1.6rem;
+          }
+
+          button {
+               margin-top: 1.6rem;
+               @include btn;
+          }
+
+          .contact_more {
+               @include flex(start);
+               gap: 2.4rem;
+
+               span {
+                    margin-top: 2.5rem;
+               }
+          }
+     }
+
+
+     &__right {
+          width: 50%;
+          @include flex;
+          flex-direction: column;
+
+          .question-mini-box{
+               @include flex(space-between);
+               background-color: #FFFFFF;
+               border-radius: 1rem;
+               padding: 1rem;
+               width: 100%;
+ 
+               label {
+                    display: block;
+                    @include flex (space-between);
+                    gap: 13.7rem;
+                    font-family: montserrat;
+                    @include font_2(2.4rem, 600, 3.6rem);
+                    color: #424F7B;
+                    cursor: pointer;
+
+                    .label_icon{
+                         width: 4rem;
+                         height: 4rem;
+                         background-color: $acc_down_bg;
+                         border-radius: 50%;
+                         @include flex(center);
+                         transition: all .4s linear;
+
+                         img{
+                              transition: all .4s linear;
+                         }
+                    }
+ 
+               }
+          }
+
+          .question-mini-box1 {
+
+               input[type="radio"]:checked ~ .question-mini-box label .label_icon img{
+                    transform: rotate(-180deg);
+                    
+                    filter: invert(8%) sepia(100%) saturate(6481%) hue-rotate(246deg) brightness(400%) contrast(143%);
+                  
+                }
+                input[type="radio"]:checked ~ .question-mini-box label .label_icon{
+                    background-color: $acc_up_bg;
+
+                }
+
+               @include flex(space-between);
+               flex-direction: column;
+               background-color: $third_color;
+               box-shadow: 0px 2.4rem 4.8rem rgba(214, 215, 216, 0.4);
+               border-radius: 1rem;
+               padding: 1rem;
+               margin-bottom: 1.6rem;
+               max-width: 58.8rem;
+               max-height: 18.8rem;
+
+               p {
+                    padding-top: 3.5rem;
+                    font-family: inter;
+                    @include font_1;
+                    color: #000;
+                    max-height: 0rem;
+                    overflow: hidden;
+                    transition: all .5s linear;
+               }
+
+               input {
+                    display: none;
+               }
+
+               input:checked~p {
+                    display: block;
+                    max-height: 11rem;
+                    padding: 3.6rem;
+                    padding-left:0rem ;
+                    
+               }
+               .first-child{
+                    gap: 16rem;
+               }
+               .second-child{
+                    gap: 13rem;;
+               }
+               .last-child{
+               
+                    gap: 26rem;
+               }
+          }
+
+
+     }
+
+}

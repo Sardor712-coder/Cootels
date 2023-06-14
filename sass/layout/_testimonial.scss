@@ -1,0 +1,49 @@
+.testimonial {
+     @include flex(space-between);
+     flex-direction: column;
+     @include padding;
+
+     h2 {
+          font-family: montserrat;
+          @include font_2(3.6rem, 600, 5.4rem);
+          margin-bottom: 2.4rem;
+          color: $primary_color;
+          text-align: center;
+     }
+
+     img {
+          padding-top:6.2rem;
+          padding-bottom: 4.4rem; 
+     }
+
+     p {
+          @include font_1;
+          color: $secondary;
+          margin-bottom: 1.6rem;
+          text-align: center
+     }
+
+     h3 {
+          @include font_2(2rem, 500, 3rem);
+          text-align: center;
+     }
+     .circle{
+          @include flex(center);
+          padding-top: 2.6rem;
+          gap: 1.2rem;
+     }
+     .circle_m{
+          width: 0.8rem;
+          height: 0.8rem;
+          border-radius: 50%;
+          background-color:$acc_down_bg ;
+     }
+     .two_circle{
+          width: 1.2rem;
+          height: 1.2rem;
+          background-color: $acc_up_bg;
+     }
+
+
+
+}

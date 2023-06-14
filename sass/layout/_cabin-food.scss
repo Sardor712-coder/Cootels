@@ -1,0 +1,58 @@
+.cabin_food{
+     @include padding;
+
+     .cabin_food_top{
+          @include flex(space-between);
+          margin-bottom: 3.2rem;
+          &__left{
+               width: 60%;
+
+               h2{
+                    font-family: montserrat;
+                    @include font_2(3.6rem, 600, 5.4rem);
+                    margin-bottom: 2.4rem;
+                    color: $primary_color;
+               }
+               p{
+                    @include font_1;
+                    color: $secondary;
+                    margin-bottom: 1.6rem;
+               }
+
+          }
+          &__right{
+               width: 40%
+               img{
+                    width: 100%
+               }
+          }
+
+     }
+
+     .cabin_food_bottom{
+          @include flex(space-between);
+
+          &__right{
+               width: 60%;
+
+               h2{
+                    font-family: montserrat;
+                    @include font_2(3.6rem, 600, 5.4rem);
+                    margin-bottom: 2.4rem;
+                    color: $primary_color;
+               }
+               p{
+                    @include font_1;
+                    color: $secondary;
+                    margin-bottom: 1.6rem;
+               }
+
+          }
+          &__left{
+               width: 40%
+               img{
+                    width: 100%
+               }
+          }
+     }
+}
